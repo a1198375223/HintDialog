@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/dialog_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_container">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="大家都在看"
+            android:layout_marginTop="8.33dip"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/dialog_hint_title"
+            android:textColor="#292929"/>
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:src="@drawable/ic_close_black_24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8.33dip"
+            android:layout_marginEnd="16.66dip"
+            android:layout_marginRight="16.66dip"
+            android:id="@+id/dialog_close"/>
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="233.33dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="16.66dip"
+        android:layout_marginEnd="16.66dip"
+        android:layout_marginLeft="16.66dip"
+        android:layout_marginStart="16.66dip"
+        android:layout_marginTop="8.33dip"
+        android:layout_marginBottom="8.33dip"
+        android:layout_below="@id/top_container"
+        android:id="@+id/dialog_image"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="高颜值才艺双胞胎"
+        android:id="@+id/dialog_main_title"
+        android:layout_below="@+id/dialog_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3.33dp"
+        android:textColor="#292929"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_text_background"
+        android:text="去 围 观"
+        android:paddingTop="9.33dip"
+        android:paddingBottom="9.33dip"
+        android:paddingLeft="66.66dip"
+        android:paddingRight="66.66dip"
+        android:layout_below="@id/dialog_main_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9.33dp"
+        android:layout_marginBottom="26.66dp"
+        android:textSize="16.66sp"
+        android:textColor="#ffffff"/>
+
+</RelativeLayout>
